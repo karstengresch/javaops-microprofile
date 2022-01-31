@@ -21,6 +21,10 @@ To launch the test page, open your browser at the following URL
     http://localhost:8080/index.html  
 
 
+## Next Step
+
+Leave the server-a server running and proceed with the instructions contained in `demo/service-b/readme.md`.
+
 
 ## Specification examples
 
@@ -31,13 +35,9 @@ Also, a simple Hello world endpoint is created, have a look at the class **Hello
 More information on MicroProfile can be found [here](https://microprofile.io/)
 
 
-### JWT Auth
+### Rest Client
 
-Using the OpenId Connect JWT token to pass authentication and authorization information to the JAX-RS endpoint. Specification [here](https://microprofile.io/project/eclipse/microprofile-rest-client)
+A type safe invocation of HTTP rest endpoints. Specification [here](https://microprofile.io/project/eclipse/microprofile-rest-client)
 
-Have a look at the **TestSecureController** class which calls the protected endpoint on the secondary application.
-The **ProtectedController** (secondary application) contains the protected endpoint since it contains the _@RolesAllowed_ annotation on the JAX-RS endpoint method.
-
-The _TestSecureController_ code creates a JWT based on the private key found within the resource directory.
-However, any method to send a REST request with an appropriate header will work of course. Please feel free to change this code to your needs.
+The example calls one endpoint from another JAX-RS resource where generated Rest Client is injected as CDI bean.
 

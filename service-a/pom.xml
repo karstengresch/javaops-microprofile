@@ -21,11 +21,6 @@
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>io.vertx</groupId>
-      <artifactId>vertx-auth-jwt</artifactId>
-      <version>3.9.5</version>
-    </dependency>
   </dependencies>
   <build>
     <finalName>javaops-app</finalName>
@@ -53,7 +48,6 @@
               <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
               <layers>
                 <layer>jaxrs</layer>
-                <layer>microprofile-jwt</layer>
                 <layer>microprofile-config</layer>
               </layers>
             </configuration>

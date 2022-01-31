@@ -9,3 +9,7 @@ There are 2 projects generated so that the examples for the Rest Client and/or J
 
 Have a look in the `readme.md` file in each directory which describes how each project can be built and run.
 
+
+Once both projects are built and started, open your browser at the following URL to launch the test page and execute both projects:
+
+    http://localhost:8080/index.html
