@@ -1,8 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "../quarkus-quickfixj"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"extensions.ignoreRecommendations": true
+	}
 }
