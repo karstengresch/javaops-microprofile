@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../quarkus-quickfixj"
+		},
+		{
+			"path": "../manning-kube-native-microservices"
 		}
 	],
 	"settings": {
